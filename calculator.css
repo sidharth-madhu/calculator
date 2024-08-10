@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container {
+    width: 340px;
+    border-radius: 35px;
+    background: linear-gradient(145deg, #333, #000);
+    padding: 20px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+    border: 1px solid #444;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+.display-container {
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.display {
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    border: none;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 3.5rem;
+    text-align: right;
+    padding-right: 20px;
+    box-sizing: border-box;
+    box-shadow: inset 0 -3px 6px rgba(0, 0, 0, 0.5), inset 0 3px 6px rgba(255, 255, 255, 0.05);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn,
+.btn-zero,
+.btn-func,
+.btn-optr,
+.btn-eql {
+    border-radius: 50px;
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-zero {
+    grid-column: span 2;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #333, #111);
+    color: #fff;
+}
+
+.btn-func {
+    background: linear-gradient(145deg, #606060, #444);
+    color: #f1c40f;
+}
+
+.btn-optr {
+    background: linear-gradient(145deg, #ff9500, #d97b00);
+    color: white;
+}
+
+.btn-eql {
+    background: linear-gradient(145deg, #ff9500, #d97b00);
+    color: white;
+    font-size: 1.7rem;
+}
+
+.btn:hover,
+.btn-zero:hover,
+.btn-func:hover,
+.btn-optr:hover,
+.btn-eql:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+.btn-func:hover {
+    background: linear-gradient(145deg, #737373, #5c5c5c);
+}
+
+.btn-optr:hover {
+    background: linear-gradient(145deg, #ffa64d, #e08300);
+}
+
+.btn-eql:hover {
+    background: linear-gradient(145deg, #ffa64d, #e08300);
+}
+
